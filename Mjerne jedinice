@@ -1,0 +1,30 @@
+while True:
+    print("KALKULATOR MJERNIH JEDINICA")
+    print("--------------------")
+    print("1.Pretvorba volta u milivolte")
+    print("2. Pretvorba Ohma u kiloohma")
+    print("3.Pretvorba Amepra u miliampere")
+    print("0. Izlaz iz programa")
+    print("-----------------")
+    opcija=int(input(print("Izaberi jednu od ponuđenih operacija(1/2/3/0): ")))
+    #struktura grananja
+    if opcija == 1:
+        print("1. Pretvorba volta u milivolte")
+        volt=float(input("Upiši količinu volta"))#koristimo float za decimalne brojeve
+        mV=volt*1000
+        print(f"{volt} volta je {mV} milivolta")
+    elif opcija == 2:
+        print("2. Pretvorba ohma u kiloohme")
+        ohm=float(input(" Upiši količinu ohma"))
+        kO=ohm/1000
+        print(f"{ohm} ohma je {kO} kiloohma")
+    elif opcija == 3:
+        print("3. Pretvorba ampera u miliampere")
+        A=float(input("Upiši količinu"))
+        mA=A*1000
+        print(f"{A} ampera je {mA} miliampera")
+    elif opcija == 0:
+        print(" Hvala na korištenju")
+        break#ova naredba prekida while petlju
+    else:
+        print("POGREŠAN UNOS!!!!!!")
